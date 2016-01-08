@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>NotesJS Demo</title>
+		<!-- NotesJS CSS -->
+		<link rel="stylesheet" type="text/css" href="NotesJS/css/NotesJS.min.css" />
+		<!-- JQuery UI CSS -->
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<!-- Custom CSS -->
+		<style type="text/css">
+		html,body{
+			width:100%;
+			height:100%;
+		}
+		</style>
+</head>
+<body>
+		<h1>NotesJS Demo</h1>
+		
+		<ul>
+			<li>
+				<button type="button" class="NotesJS">I'm a button, click me!</button>
+			</li>
+			<li>
+				<a class="NotesJS" href="#">I'm a link, click me!</a>
+			</li>
+		</ul>
+
+		<h2>Options</h2>
+
+		<ul>
+			<li>
+				<h3>'color' : String (Default: '#feed56')</h3>
+				<p>Sets the color of notes.</p>
+			</li>
+			<li>
+				<h3>'insertTargetText' : Boolean (Default: true)</h3>
+				<p>If true, the target's text will appear inside the note.</p>
+			</li>
+			<li>
+				<h3>'defaultText' : String (Default: 'Hello, NotesJS is awesome.')</h3>
+				<p>If 'insertTargetText' is set to false, the value of 'defaultText' will appear in the note.</p>
+			</li>
+			<li>
+				<h3>'confirmDelete' : Boolean (Default: false)</h3>
+				<p>If set to true, deletion of a note must be confirmed.</p>
+			</li>
+		</ul>
+
+		<h2>Download</h2>
+		
+		<ul>
+			<li>
+				<a href="#">Download from GitHub</a>
+			</li>
+		</ul>
+
+		<!-- JQuery -->
+		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<!-- JQUery UI -->
+		<script type="text/javascript" src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<!-- NotesJS -->
+		<script type="text/javascript" src="NotesJS/js/NotesJS.min.js"></script>
+		<!-- Initialize NotesJS -->
+		<script type="text/javascript">
+		$(document).ready(function(){
+			//	Initialize NotesJS on all
+			//	elements with class .NotesJS
+			$(".NotesJS").NotesJS();
+		});
+		</script>
+
+	</body>
+</html>

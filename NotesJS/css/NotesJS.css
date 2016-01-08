@@ -1,0 +1,59 @@
+.NotesJS-note{
+	position:absolute;
+  	padding:26px 0 0 0;
+  	margin:0;      
+  	display:inline-block;    
+  	-moz-box-shadow: 0 0 5px #333;
+  	-webkit-box-shadow: 0 0 5px #333;
+  	box-shadow: 0 0 5px #333;
+  	-webkit-border-radius:3px;
+  	-moz-border-radius:3px;
+  	border-radius:3px;
+  	border-bottom-right-radius: 15px;
+}
+.NotesJS-note-text{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:15px;
+}
+.NotesJS-delete{
+	position:absolute;
+	top: -17px;
+	right: -17px;
+	width: 34px;
+	height: 34px;
+	cursor: pointer;
+	background-image:url(../images/delete.png);
+	border-radius:50%;
+	visibility:hidden;
+}
+.NotesJS-resize{
+	float:left;
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+.NotesJS-drag{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	background:url(../images/drag.gif) repeat-x;
+	height:25px;
+	opacity:0.4;
+	cursor:move;
+}
+.NotesJS-add-note{
+	position:absolute;
+	top:10px;
+	left:10px;
+	width:48px;
+	height:48px;
+	border-radius:50%;
+	border:none;
+	cursor:pointer;
+	background:url(../images/plus.png) no-repeat;
+}
